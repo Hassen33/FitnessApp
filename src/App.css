@@ -1,6 +1,9 @@
 body {
   font-family: 'Josefin Sans';
   background-color: #FFFAFB;
+  background-color: #39414a;
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 * {
@@ -9,7 +12,11 @@ body {
   box-sizing: border-box;
 
 }
-
+.brickWall {
+  background-color: #39414a;
+background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
 ::-webkit-scrollbar {
   width: 0px;
 }
@@ -60,13 +67,15 @@ body {
   width: 700px;
   height: 900px;
   margin-top: -330px;
+  border-radius: 10%;
+  border: 3px solid red;
 
 }
 
 .exercise-card {
   width: 400px;
   height: 445px;
-  background: #fff;
+
   border-top: 4px solid #FF2625;
   border-bottom-left-radius: 20px;
   text-decoration: none;
@@ -85,6 +94,7 @@ body {
 .bodyPart-card {
   transform: scale(1, 1);
   transition: 0.3s all ease-in-out;
+  
 }
 
 .exercise-card:hover,
